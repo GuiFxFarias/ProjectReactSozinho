@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "./Container";
+
 import "./NavbarStyle.css"
 
 function Navbar() {
@@ -8,13 +9,16 @@ function Navbar() {
       <Container>
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link to={"/"}>Principal</Link>
           </li>
           <li>
-            <Link to={"/Sobre"}>Sobre</Link>
+            <Link to={"/CriarConta"}>Criar Conta</Link>
           </li>
           <li>
-            <Link to={"/Contato"}>Contato</Link>
+            <Link to={"/BaixarJogo"}>Baixar Jogo</Link>
+          </li>
+          <li>
+            <Link to={"/Torneios"}>Torneios</Link>
           </li>
         </ul>
       </Container>

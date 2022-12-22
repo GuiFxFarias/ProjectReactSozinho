@@ -1,4 +1,18 @@
 .navbar{
     display: flex;   
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    background-color: whitesmoke;
+    padding: 1em;
+    width: 55%;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li{
+    margin-right: 10px;
+    font-size: 1.2em;
 }

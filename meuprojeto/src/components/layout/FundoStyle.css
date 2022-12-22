@@ -1,0 +1,15 @@
+.background{
+    width: 99vw;
+    height: 200vh;
+    background: url("../img/images.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.effect{
+    width: 99vw;
+    height: 200vh;
+    background-color: rgba(43, 43, 43, 0.463);
+    
+}

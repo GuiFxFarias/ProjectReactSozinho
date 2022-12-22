@@ -3,7 +3,7 @@ import "./HomeStyle.css";
 
 function Principal() {
   return (
-    <h1>Principal</h1>
+    <></>
   );
 }
 

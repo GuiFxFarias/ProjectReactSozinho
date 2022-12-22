@@ -7,11 +7,12 @@ import Torneios from "./components/pages/Torneios"
 
 import Navbar from "./components/layout/Navbar"
 import NavbarIcons from "./components/layout/NavbarIcons";
+import Fundo from "./components/layout/Fundo";
 
 function App() {
   return (
     <Router>
-      
+      <Fundo></Fundo>
       <Routes>
         <Route path="/" element={<Principal />}></Route>
         <Route path="/BaixarJogo" element={<BaixarJogo />}></Route>

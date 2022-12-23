@@ -5,8 +5,6 @@ import Principal from "./components/pages/Principal";
 import BaixarJogo from "./components/pages/BaixarJogo";
 import Torneios from "./components/pages/Torneios"
 
-import Navbar from "./components/layout/Navbar"
-import NavbarIcons from "./components/layout/NavbarIcons";
 import Fundo from "./components/layout/Fundo";
 
 function App() {

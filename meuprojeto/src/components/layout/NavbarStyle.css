@@ -4,9 +4,9 @@
     align-items: center;
     margin: auto;
 
-    background-color: whitesmoke;
-    padding: 1em;
+    background-color: #357ae1;
     width: 55%;
+    overflow-x: hidden;
 }
 .navbar ul{
     display: flex;
@@ -16,3 +16,32 @@
     margin-right: 10px;
     font-size: 1.2em;
 }
+
+.styleNav{
+    padding: 0.5em;
+    border-bottom: 1px solid rgb(0, 195, 255);
+    font-size: 12pt;
+}
+
+.styleNav li a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+.hTittle{
+    margin-left: 5px;
+    color: white;
+    padding-top: 2px;
+}
+
+.event{
+    display: flex;
+}
+
+.event svg{
+    color: #FFCD00;
+    font-size: 16pt;
+}
+

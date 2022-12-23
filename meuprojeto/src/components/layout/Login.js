@@ -1,27 +1,36 @@
 import Container from "./Container";
 import "./LoginStyle.css";
-import {GiPokecog} from "react-icons/gi"
+import { GiPokecog } from "react-icons/gi";
 
 function Login() {
   return (
     <Container customClass="squareLogin">
       <form>
+        <div className="account">Sua conta</div>
         <div className="divEmail">
-          <label htmlFor="email">E-mail: </label>
           <input type="email" name="email" placeholder="E-mail" />
         </div>
         <div className="divPass">
-          <label htmlFor="passwords">Password: </label>
           <input
             type="password"
             name="passwords"
             id="passwords"
             placeholder="Password"
+            required
           />
         </div>
+        <div className="loginButton">
+          <button type="submit">
+            Login
+          </button>
+        </div>
         <div className="buttons">
-          <button type="submit"><GiPokecog></GiPokecog> Criar Conta</button>
-          <button type="submit">Recuperar Conta</button>
+          <button type="submit">
+            <GiPokecog></GiPokecog> Criar Conta
+          </button>
+          <button type="submit">
+            <GiPokecog></GiPokecog> Recuperar Conta
+          </button>
         </div>
       </form>
     </Container>

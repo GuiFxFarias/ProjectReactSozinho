@@ -1,25 +1,72 @@
 .divEmail {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.divEmail label {
-  padding: 0.2em 0;
+.divEmail input {
+  padding: 0.4em;
+  text-align: center;
+  width: 80%;
+  margin: 0.2em;
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+.loginButton {
+  text-align: center;
+}
+
+.loginButton button {
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  background-color: #fb7;
 }
 
 .divPass {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.divPass label {
-  padding: 0.2em 0;
+.divPass input {
+  padding: 0.4em;
+  text-align: center;
+  width: 80%;
+  margin: 0.2em;
+  border-radius: 1em;
+  border: 1px solid black;
 }
 
-.buttons button{
-    padding: 0.3em;
-    margin: 5px 0;
-    flex-direction: column;
-    background-color: #2b8cfa;
-    width: 60%
+.buttons button {
+  padding: 0.3em;
+  margin: 1px 0;
+  flex-direction: column;
+  background-color: white;
+  width: 60%;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.buttons {
+  margin-top: 5px;
+}
+
+.buttons button:hover {
+  opacity: .5;
+}
+
+.account {
+  background-color: #1a84fd;
+  padding: 0.4em 0.7em;
+
+  margin: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  font-size: 14pt;
 }

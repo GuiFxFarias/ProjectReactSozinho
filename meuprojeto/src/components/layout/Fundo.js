@@ -6,8 +6,13 @@ function Fundo() {
   return (
     <div className="background">
       <div className="effect">
-        <NavbarIcons customClass={'margin'}></NavbarIcons>
-        <Navbar></Navbar>
+        <div className="containder">
+          <div className="contColumn">
+            <NavbarIcons customClass={'margin'}></NavbarIcons>
+            <Navbar></Navbar>
+          </div>
+          <div className="cont"></div>
+        </div>
       </div>
     </div>
   );

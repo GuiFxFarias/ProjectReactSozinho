@@ -5,10 +5,9 @@
   margin: auto;
 
   background-color: rgba(255, 255, 255, 0.548);
-  padding: .5em;
-  width: 55%;
+  padding: 0.5em;
+  width: 65%;
   overflow-x: hidden;
-  
 }
 .iconsNav svg {
   font-size: 1.5em;
@@ -16,21 +15,19 @@
 }
 
 .backgroundIcon {
-  
   padding: 1em;
   border-radius: 20px;
 }
 
-.margin{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-
-.image{
-    background: url("../img/PokeTibia.png");
-    width: 200px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.image {
+  background: url("../img/PokeTibia.png");
+  width: 200px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

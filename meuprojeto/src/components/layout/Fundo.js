@@ -1,4 +1,5 @@
 import "./FundoStyle.css";
+import Login from "./Login";
 import Navbar from "./Navbar";
 import NavbarIcons from "./NavbarIcons";
 
@@ -6,12 +7,16 @@ function Fundo() {
   return (
     <div className="background">
       <div className="effect">
-        <div className="containder">
-          <div className="contColumn">
-            <NavbarIcons customClass={'margin'}></NavbarIcons>
-            <Navbar></Navbar>
+        <NavbarIcons customClass={"margin"}></NavbarIcons>
+        <div className="container01">
+          <div className="containder">
+            <div className="contColumn">
+              <Navbar></Navbar>
+            </div>
+            <div className="cont">
+              <Login></Login>
+            </div>
           </div>
-          <div className="cont"></div>
         </div>
       </div>
     </div>

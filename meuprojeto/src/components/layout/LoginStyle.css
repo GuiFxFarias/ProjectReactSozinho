@@ -1,0 +1,25 @@
+.divEmail {
+  display: flex;
+  flex-direction: column;
+}
+
+.divEmail label {
+  padding: 0.2em 0;
+}
+
+.divPass {
+  display: flex;
+  flex-direction: column;
+}
+
+.divPass label {
+  padding: 0.2em 0;
+}
+
+.buttons button{
+    padding: 0.3em;
+    margin: 5px 0;
+    flex-direction: column;
+    background-color: #2b8cfa;
+    width: 60%
+}

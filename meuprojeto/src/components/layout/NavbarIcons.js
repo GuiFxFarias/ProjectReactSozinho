@@ -8,7 +8,6 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-//GiPokecog
 
 function NavbarIcons({ customClass }) {
   return (

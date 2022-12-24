@@ -1,6 +1,7 @@
 import Container from "./Container"
 import "./CategoresStyle.css"
 
+
 function Categories(){
     return(
         <Container>

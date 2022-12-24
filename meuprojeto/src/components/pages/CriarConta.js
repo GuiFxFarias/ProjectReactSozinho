@@ -1,5 +1,6 @@
-function CriarConta(){
-    return <h1>CriarConta</h1>
+function CriarConta() {
+
+  return <h1>CriarConat</h1>;
 }
 
-export default CriarConta
+export default CriarConta;

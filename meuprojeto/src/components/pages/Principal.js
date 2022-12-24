@@ -1,7 +1,7 @@
 import "./HomeStyle.css";
 
 function Principal() {
-  return <h1>dsadsa</h1>;
+  return <h1>Olá</h1>;
 }
 
 export default Principal;

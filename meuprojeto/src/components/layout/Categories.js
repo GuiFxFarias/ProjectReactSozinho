@@ -1,5 +1,5 @@
 import Container from "./Container"
-import "./CategoresStyle.css"
+import "./CategoriesStyle.css"
 
 
 function Categories(){

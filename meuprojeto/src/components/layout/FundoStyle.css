@@ -20,24 +20,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  width: 90%;
 }
 
 .containder {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+  width: 80%;
 }
 
 .contColumn {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  margin-right: 10px;
+  width: 60%;
 }
 
-.cont{
+.cont {
   border-radius: 5px;
   background-color: white;
 }
 
-.cont01{
+
+
+.cont01 {
   margin-top: 10px;
 }

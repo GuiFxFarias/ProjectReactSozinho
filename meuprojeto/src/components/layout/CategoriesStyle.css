@@ -1,3 +1,5 @@
+
+
 .categories ul {
   list-style: none;
   padding: 0.5em;
@@ -6,6 +8,11 @@
 .categories li {
   cursor: pointer;
   margin-top: 1px;
+  transition: 0.7s;
+}
+
+.categories li:hover {
+  opacity: 0.5;
 }
 
 .listCategories {

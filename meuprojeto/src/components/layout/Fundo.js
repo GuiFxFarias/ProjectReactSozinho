@@ -1,6 +1,7 @@
 import Categories from "./Categories";
 import "./FundoStyle.css";
 import Login from "./Login";
+import Main from "./Main";
 import Navbar from "./Navbar";
 import NavbarIcons from "./NavbarIcons";
 
@@ -13,6 +14,7 @@ function Fundo() {
           <div className="containder">
             <div className="contColumn">
               <Navbar></Navbar>
+              <Main></Main>
             </div>
             <div className="flexColumn">
               <div className="cont">

@@ -6,7 +6,7 @@
 
   background-color: rgba(255, 255, 255, 0.548);
   padding: 0.5em;
-  width: 65%;
+  min-width: 60%;
   overflow-x: hidden;
 }
 .iconsNav svg {

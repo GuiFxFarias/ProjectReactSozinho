@@ -1,3 +1,4 @@
+import Principal from "../pages/Principal";
 import Categories from "./Categories";
 import "./FundoStyle.css";
 import Login from "./Login";
@@ -5,7 +6,7 @@ import Main from "./Main";
 import Navbar from "./Navbar";
 import NavbarIcons from "./NavbarIcons";
 
-function Fundo() {
+function Fundo(props) {
   return (
     <div className="background">
       <div className="effect">

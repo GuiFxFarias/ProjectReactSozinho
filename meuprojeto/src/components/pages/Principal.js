@@ -1,7 +1,8 @@
+import Main from "../layout/Main";
 import "./HomeStyle.css";
 
 function Principal() {
-  return <h1>Olá</h1>;
+  return <p>oi</p>
 }
 
 export default Principal;

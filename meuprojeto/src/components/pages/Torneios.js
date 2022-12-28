@@ -1,7 +1,7 @@
-function Torneios (){
-    return(
-        <h1>Torneios</h1>
-    )
+import Main from "../layout/Main";
+
+function Torneios() {
+  return <p>oi</p>;
 }
 
-export default Torneios
+export default Torneios;

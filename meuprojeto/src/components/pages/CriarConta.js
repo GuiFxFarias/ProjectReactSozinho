@@ -1,6 +1,10 @@
-function CriarConta() {
+import Main from "../layout/Main";
 
-  return <h1>CriarConat</h1>;
+
+function CriarConta() {
+  return (
+    <p>oi</p>
+  );
 }
 
 export default CriarConta;

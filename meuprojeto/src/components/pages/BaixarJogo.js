@@ -1,5 +1,10 @@
+import BaixaJogo from "../layout/BaixaJogo";
+import Main from "../layout/Main";
+
 function BaixarJogo() {
-  return <h1>BaixarJogo</h1>;
+  return (
+    <p>oi</p>
+  )
 }
 
 export default BaixarJogo;

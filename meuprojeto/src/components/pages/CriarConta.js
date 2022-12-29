@@ -3,7 +3,7 @@
 
 function CriarConta() {
   return (
-    <p>oi</p>
+    <p>Criar conta</p>
   );
 }
 

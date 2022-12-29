@@ -2,7 +2,7 @@
 
 function BaixarJogo() {
   return (
-    <p>oi</p>
+    <p>BaixarJogo</p>
   )
 }
 

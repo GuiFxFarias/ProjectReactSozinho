@@ -4,7 +4,7 @@ import { GiPokecog } from "react-icons/gi";
 
 function Login(props) {
   return (
-    <Container customClass={`squareLogin, ${props.classLogin}`}>
+    <Container customClass={`squareLogin ${props.classLogin}`}>
       <form>
         <div className="account">Sua conta</div>
         <div className="divEmail">

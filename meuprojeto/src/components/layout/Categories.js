@@ -4,7 +4,7 @@ import "./CategoriesStyle.css"
 
 function Categories(){
     return(
-        <Container>
+        <Container customClass="categoriesFlex">
             <div className="tittle">Busque aqui</div>
             <div className="categories">
                 <ul className="listCategories">

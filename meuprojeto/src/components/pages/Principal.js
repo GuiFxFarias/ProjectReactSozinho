@@ -2,7 +2,7 @@
 import "./HomeStyle.css";
 
 function Principal() {
-  return <p>oi</p>
+  return <p>Principal</p>
 }
 
 export default Principal;

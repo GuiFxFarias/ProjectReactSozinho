@@ -1,7 +1,7 @@
 
 
 function Torneios() {
-  return <p>oi</p>;
+  return <p>Torneios</p>;
 }
 
 export default Torneios;

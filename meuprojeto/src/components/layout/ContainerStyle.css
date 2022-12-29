@@ -32,3 +32,27 @@
   width: 50vw;
   justify-content: center;
 }
+
+
+.squareLogin form{
+  border: 1px solid #1962b7;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.background{
+  background-image: url("../img/unnamed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: block;
+}
+
+.main{
+  border-radius: 10px;
+  margin: 0px;
+  margin-top: 10px;
+  width: 98%;
+  background-color: white;
+}

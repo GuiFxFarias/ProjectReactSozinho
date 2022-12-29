@@ -5,12 +5,13 @@ import CriarConta from "./components/pages/CriarConta";
 import Principal from "./components/pages/Principal";
 import BaixarJogo from "./components/pages/BaixarJogo";
 import Torneios from "./components/pages/Torneios";
+import NavbarIcons from "./components/layout/NavbarIcons";
 import Fundo from "./components/layout/Fundo";
-
 
 function App() {
   return (
     <Router>
+      <NavbarIcons customClass={"margin"}></NavbarIcons>
       <Fundo></Fundo>
       <Routes>
         <Route path="/" element={<Principal />}></Route>

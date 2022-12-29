@@ -1,12 +1,4 @@
-.background {
-  width: 100%;
-  height: 200vh;
-  background: url("../img/unnamed.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
+
 
 .effect {
   width: 100%;

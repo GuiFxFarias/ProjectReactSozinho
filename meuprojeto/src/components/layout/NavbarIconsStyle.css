@@ -6,7 +6,7 @@
 
   background-color: rgba(255, 255, 255, 0.548);
   padding: 0.5em;
-  min-width: 60%;
+  width: 60%;
   overflow-x: hidden;
 }
 .iconsNav svg {
@@ -26,7 +26,7 @@
 
 .image {
   background: url("../img/PokeTibia.png");
-  width: 200px;
+  width: 40%;
   height: 60px;
   background-size: contain;
   background-repeat: no-repeat;

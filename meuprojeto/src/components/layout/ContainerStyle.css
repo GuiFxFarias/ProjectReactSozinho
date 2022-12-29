@@ -11,12 +11,24 @@
   min-height: 75%;
 }
 
-.start {
-  justify-content: flex-start;
+.fatherContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.column {
-  flex-direction: column;
+.containder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 30px;
   justify-content: center;
 }
 
+.contMain {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+}

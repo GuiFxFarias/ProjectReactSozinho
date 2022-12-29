@@ -1,4 +1,4 @@
-import Main from "../layout/Main";
+
 import "./HomeStyle.css";
 
 function Principal() {

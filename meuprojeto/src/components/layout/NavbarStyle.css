@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+
 
   background: linear-gradient(to right, #1a84fd, #1a84fd, #1a84fd, #ffcd00);
   border: 2px solid #1962b7;
-  width: 100%;
+  width: 98%;
   overflow-x: hidden;
   border-radius: 10px;
+  margin-right: 30px;
 }
 .navbar ul {
   display: flex;

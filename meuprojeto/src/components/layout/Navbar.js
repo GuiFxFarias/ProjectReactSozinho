@@ -5,10 +5,9 @@ import { FiArrowRight } from "react-icons/fi";
 import "./NavbarStyle.css";
 
 function Navbar() {
-
   const eventWeek = {
-    name: 'CaçaPokemon'
-  }
+    name: "CaçaPokemon",
+  };
 
   return (
     <nav className="navbar">
@@ -33,7 +32,8 @@ function Navbar() {
           <FiArrowRight></FiArrowRight>{" "}
           <div className="hTittle">
             {" "}
-            Não fique de fora do proximo evento: <strong>{eventWeek.name}</strong>
+            Não fique de fora do proximo evento:{" "}
+            <strong>{eventWeek.name}</strong>
           </div>
         </div>
       </nav>

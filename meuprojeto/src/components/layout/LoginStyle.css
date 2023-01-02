@@ -16,12 +16,14 @@
 
 .loginButton {
   text-align: center;
+  padding: 10px;
 }
 
 .loginButton button {
   padding: 0.5em 1em;
   border-radius: 30px;
   background-color: #fb7;
+  cursor: pointer;
 }
 
 .divPass {
@@ -45,19 +47,25 @@
   margin: 1px 0;
   flex-direction: column;
   background-color: white;
-  width: 60%;
+  width: 100%;
   border: none;
+  height: 100%;
   cursor: pointer;
   transition: 0.7s;
   border-radius: 5px;
 }
 
 .buttons {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .buttons button:hover {
-  opacity: 0.5;
+  background-color: #52a1fb;
+}
+
+.buttons button a{
+  text-decoration: none;
+  color: black;
 }
 
 .account {
@@ -69,4 +77,9 @@
   border-bottom: 1px solid black;
   margin-bottom: 5px;
   font-size: 14pt;
+}
+
+.squareLogin {
+  display: flex;
+  flex-direction: column;
 }

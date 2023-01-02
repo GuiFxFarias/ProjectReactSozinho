@@ -11,7 +11,8 @@ import NavbarIcons from "./components/layout/NavbarIcons";
 import Container from "./components/layout/Container";
 import Navbar from "./components/layout/Navbar";
 import Login from "./components/layout/Login";
-import Categories from "./components/layout/Categories"
+import Categories from "./components/layout/Categories";
+import RecuperarSenha from "./components/pages/RecuperarSenha";
 
 function App() {
   return (
@@ -27,11 +28,19 @@ function App() {
                 <Route path="/BaixarJogo" element={<BaixarJogo />}></Route>
                 <Route path="/Torneios" element={<Torneios />}></Route>
                 <Route path="/CriarConta" element={<CriarConta />}></Route>
+                <Route
+                  path="/RecuperarSenha"
+                  element={<RecuperarSenha />}
+                ></Route>
               </Routes>
             </Container>
           </Container>
           <div>
-            <Login customClass="borderLogin"></Login>
+            <Login
+              customClass="borderLogin"
+              register="Criar Conta"
+              passForgot="Recuperar Conta"
+            ></Login>
             <Categories></Categories>
           </div>
         </Container>

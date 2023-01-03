@@ -14,7 +14,27 @@ function Login(props) {
 
   function handleLogin(e) {
     e.preventDefault();
-    signInWithEmailAndPassword(email, password);
+    signInWithEmailAndPassword(email, password)
+      .then(() => {
+        alert("logou");
+      })
+      .catch((e) => {
+        console.log("Erro: " + e);
+        switch (e.code) {
+          case "auth/user-not-found":
+            alert(e);
+            break;
+          case "auth/wrong-password":
+            alert(e);
+            break;
+          case "auth/invalid-email":
+            alert(e);
+            break;
+          case "auth/user-disabled":
+            alert(e);
+            break;
+        }
+      });
   }
 
   return (

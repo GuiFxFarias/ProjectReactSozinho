@@ -1,13 +1,30 @@
-form{
+form {
   width: 100%;
 }
 
+h2{
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: .4em;
+  padding: 0.5em;
+  margin: 10px;
+}
+
+h4{
+  background-color: aliceblue;
+  padding: 0.2em;
+}
+
 .flexAccount {
-  display: flex;
+  display: flex; 
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   height: 350px;
+}
+
+.accountNew .listLabel .item svg {
+  font-size: 16pt;
 }
 
 .flexAccount ul {
@@ -77,4 +94,71 @@ form{
   height: 300px;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.item {
+  width: 180px;
+  background-color: #3995ff;
+  border-radius: 1em;
+  color: white;
+  padding: 8px;
+}
+
+.item label {
+  display: flex;
+  align-items: center;
+}
+
+.item label svg {
+  font-size: 16pt;
+  margin-left: 10px;
+}
+
+.itemInput input {
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.itemPersonage{
+  width: 180px;
+  background-color: #3995ff;
+  border-radius: 1em;
+  color: white;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.itemPersonage label{
+  display: flex;
+  align-items: center;
+}
+
+.itemPersonage label svg{
+  font-size: 16pt;
+  margin-left: 10px;
+}
+
+.itemSelect #namePersonage{
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.itemSelect #genre{
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.itemSelect #initialCity{
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.itemSelect #server{
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
 }

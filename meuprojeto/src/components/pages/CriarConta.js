@@ -2,6 +2,7 @@ import "./CriarContaStyle.css";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../FirebaseConfig";
 import { useState } from "react";
+import { BsFillForwardFill } from "react-icons/bs";
 
 function CriarConta() {
   const [email, setEmail] = useState("");
@@ -28,16 +29,16 @@ function CriarConta() {
             <fieldset className="accountNew">
               <ul className="listLabel">
                 <li className="item">
-                  <label htmlFor="nameUser">Nome de Usuário</label>
+                  <label htmlFor="nameUser">Nome de Usuário <BsFillForwardFill /></label>
                 </li>
                 <li className="item">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">Email <BsFillForwardFill /></label>
                 </li>
                 <li className="item">
-                  <label htmlFor="passOne">Senha</label>
+                  <label htmlFor="passOne">Senha <BsFillForwardFill /></label>
                 </li>
                 <li className="item">
-                  <label htmlFor="passTwo">Repetir Senha</label>
+                  <label htmlFor="passTwo">Repetir Senha <BsFillForwardFill /></label>
                 </li>
               </ul>
             </fieldset>
@@ -63,7 +64,12 @@ function CriarConta() {
                   />
                 </li>
                 <li className="itemInput">
-                  <input type="password" name="passTwo" id="passTwo" />
+                  <input
+                    type="password"
+                    name="passTwo"
+                    id="passTwo"
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
                 </li>
               </ul>
             </fieldset>
@@ -73,16 +79,16 @@ function CriarConta() {
             <fieldset className="personage">
               <ul className="listPersonage">
                 <li className="itemPersonage">
-                  <label htmlFor="namePersonage">Nome</label>
+                  <label htmlFor="namePersonage">Nome <BsFillForwardFill /></label>
                 </li>
                 <li className="itemPersonage">
-                  <label htmlFor="genre">Gênero</label>
+                  <label htmlFor="genre">Gênero <BsFillForwardFill /></label>
                 </li>
                 <li className="itemPersonage">
-                  <label htmlFor="initialCity">Cidade inicial</label>
+                  <label htmlFor="initialCity">Cidade inicial <BsFillForwardFill /></label>
                 </li>
                 <li className="itemPersonage">
-                  <label htmlFor="server">Servidor</label>
+                  <label htmlFor="server">Servidor <BsFillForwardFill /></label>
                 </li>
               </ul>
             </fieldset>

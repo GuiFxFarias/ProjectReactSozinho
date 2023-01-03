@@ -29,16 +29,24 @@ function CriarConta() {
             <fieldset className="accountNew">
               <ul className="listLabel">
                 <li className="item">
-                  <label htmlFor="nameUser">Nome de Usuário <BsFillForwardFill /></label>
+                  <label htmlFor="nameUser">
+                    Nome de Usuário <BsFillForwardFill />
+                  </label>
                 </li>
                 <li className="item">
-                  <label htmlFor="email">Email <BsFillForwardFill /></label>
+                  <label htmlFor="email">
+                    Email <BsFillForwardFill />
+                  </label>
                 </li>
                 <li className="item">
-                  <label htmlFor="passOne">Senha <BsFillForwardFill /></label>
+                  <label htmlFor="passOne">
+                    Senha <BsFillForwardFill />
+                  </label>
                 </li>
                 <li className="item">
-                  <label htmlFor="passTwo">Repetir Senha <BsFillForwardFill /></label>
+                  <label htmlFor="passTwo">
+                    Repetir Senha <BsFillForwardFill />
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -79,16 +87,24 @@ function CriarConta() {
             <fieldset className="personage">
               <ul className="listPersonage">
                 <li className="itemPersonage">
-                  <label htmlFor="namePersonage">Nome <BsFillForwardFill /></label>
+                  <label htmlFor="namePersonage">
+                    Nome <BsFillForwardFill />
+                  </label>
                 </li>
                 <li className="itemPersonage">
-                  <label htmlFor="genre">Gênero <BsFillForwardFill /></label>
+                  <label htmlFor="genre">
+                    Gênero <BsFillForwardFill />
+                  </label>
                 </li>
                 <li className="itemPersonage">
-                  <label htmlFor="initialCity">Cidade inicial <BsFillForwardFill /></label>
+                  <label htmlFor="initialCity">
+                    Cidade inicial <BsFillForwardFill />
+                  </label>
                 </li>
                 <li className="itemPersonage">
-                  <label htmlFor="server">Servidor <BsFillForwardFill /></label>
+                  <label htmlFor="server">
+                    Servidor <BsFillForwardFill />
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -98,8 +114,20 @@ function CriarConta() {
                   <input type="text" name="namePersonage" id="namePersonage" />
                 </li>
                 <li className="itemSelect">
-                  <input type="radio" name="genre" id="genre" />
-                  <input type="radio" name="genre" id="genre" />
+                  <input
+                    type="radio"
+                    name="genre"
+                    id="genreF"
+                    className="radio"
+                  />
+                  <input
+                    type="radio"
+                    name="genre"
+                    id="genreM"
+                    className="radio"
+                  />
+                  <label htmlFor="genreF">Feminino</label>
+                  <label htmlFor="genreM">Masculino</label>
                 </li>
                 <li className="itemSelect">
                   <select name="initialCity" id="initialCity"></select>

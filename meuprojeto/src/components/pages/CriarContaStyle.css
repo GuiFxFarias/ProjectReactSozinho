@@ -1,0 +1,76 @@
+.flexAccount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 350px;
+}
+
+.flexAccount ul {
+  list-style: none;
+}
+
+.rowRegister {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.accountNew {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+}
+
+.inputsFlex {
+  border: none;
+}
+
+.listInput {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.listLabel {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rowPersonage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.personage {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+}
+
+.listPersonage {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.selectPersonage {
+  border: none;
+}
+.selectList {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}

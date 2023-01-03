@@ -1,5 +1,5 @@
 
-import "./HomeStyle.css";
+import "./PrincipalStyle.css";
 
 function Principal() {
   return <p>Principal</p>

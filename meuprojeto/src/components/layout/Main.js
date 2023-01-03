@@ -1,12 +1,11 @@
-import Principal from "../pages/Principal"
-import Container from "./Container"
+
 import "./MainStyle.css"
 
 function Main(props){
     return (
-        <Container customClass="mainStyle">
+        <div className="mainStyle">
             {props.children}
-        </Container>
+        </div>
     )
 }
 

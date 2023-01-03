@@ -13,6 +13,7 @@ import Navbar from "./components/layout/Navbar";
 import Login from "./components/layout/Login";
 import Categories from "./components/layout/Categories";
 import RecuperarSenha from "./components/pages/RecuperarSenha";
+import Main from "./components/layout/Main";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Container customClass="containder">
           <Container customClass="contMain">
             <Navbar></Navbar>
-            <Container customClass="main">
+            <Main>
               <Routes>
                 <Route path="/" element={<Principal />}></Route>
                 <Route path="/BaixarJogo" element={<BaixarJogo />}></Route>
@@ -33,7 +34,7 @@ function App() {
                   element={<RecuperarSenha />}
                 ></Route>
               </Routes>
-            </Container>
+            </Main>
           </Container>
           <div>
             <Login

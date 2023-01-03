@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
 .divEmail input {
@@ -11,12 +12,13 @@
   width: 80%;
   margin: 0.2em;
   border-radius: 1em;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .loginButton {
   text-align: center;
   padding: 10px;
+  border: none;
 }
 
 .loginButton button {
@@ -31,6 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
 .divPass input {
@@ -39,7 +42,7 @@
   width: 80%;
   margin: 0.2em;
   border-radius: 1em;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .buttons button {
@@ -63,7 +66,7 @@
   background-color: #52a1fb;
 }
 
-.buttons button a{
+.buttons button a {
   text-decoration: none;
   color: black;
 }

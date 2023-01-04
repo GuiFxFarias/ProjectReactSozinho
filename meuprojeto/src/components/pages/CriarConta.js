@@ -2,32 +2,18 @@ import "./CriarContaStyle.css";
 import { auth } from "../../FirebaseConfig";
 import { useState } from "react";
 import { BsFillForwardFill } from "react-icons/bs";
-import {
-  createUserWithEmailAndPassword,
-  onAuthStateChanged,
-} from "firebase/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 function CriarConta() {
-  const [registerEmail, setRegisterEmail] = useState("");
-  const [registerPassword, setRegisterPassword] = useState("");
-  const [user, setUser] = useState({});
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
-
-  const register = async () => {
-    try {
-      const user = await createUserWithEmailAndPassword(
-        auth,
-        registerEmail,
-        registerPassword
-      );
-      console.log(user);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  function handleRegister(e) {
+    e.preventDefault();
+    createUserWithEmailAndPassword(email, password);
+  }
 
   return (
     <div>
@@ -70,7 +56,7 @@ function CriarConta() {
                     type="text"
                     name="email"
                     id="email"
-                    onChange={(e) => setRegisterEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </li>
                 <li className="itemInput">
@@ -78,7 +64,7 @@ function CriarConta() {
                     type="password"
                     name="passOne"
                     id="passOne"
-                    onChange={(e) => setRegisterPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </li>
                 <li className="itemInput">
@@ -86,7 +72,7 @@ function CriarConta() {
                     type="password"
                     name="passTwo"
                     id="passTwo"
-                    onChange={(e) => setRegisterPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </li>
               </ul>
@@ -148,7 +134,7 @@ function CriarConta() {
               </ul>
             </fieldset>
           </div>
-          <button onClick={register}>Registrar</button>
+          <button onClick={handleRegister}>Registrar</button>
         </form>
       </div>
     </div>

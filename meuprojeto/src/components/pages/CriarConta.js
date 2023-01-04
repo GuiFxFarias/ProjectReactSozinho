@@ -56,6 +56,7 @@ function CriarConta() {
                     type="text"
                     name="email"
                     id="email"
+                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </li>
@@ -72,6 +73,7 @@ function CriarConta() {
                     type="password"
                     name="passTwo"
                     id="passTwo"
+                    value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </li>

@@ -1,18 +1,38 @@
 import "./CriarContaStyle.css";
-import { auth } from "../../FirebaseConfig";
 import { useState } from "react";
 import { BsFillForwardFill } from "react-icons/bs";
+
+import { auth } from "../../FirebaseConfig";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 function CriarConta() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
 
   function handleRegister(e) {
     e.preventDefault();
     createUserWithEmailAndPassword(email, password);
+  }
+
+  if (loading) {
+    console.log("cadastrado");
+    return (
+      <div>
+        <p>Carregando...</p>
+        <p>Registrou</p>
+      </div>
+    );
+  }
+
+  if (user) {
+    console.log(user);
+  }
+
+  if (error) {
+    return console.log("Erro" + error);
   }
 
   return (

@@ -1,51 +1,44 @@
 import Container from "./Container";
 import "./LoginStyle.css";
 import { GiPokecog } from "react-icons/gi";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useState } from "react";
-import { auth } from "../../FirebaseConfig";
+import { useSignOut } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import "../pages/Principal";
+
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { auth } from "../../FirebaseConfig";
+import Principal from "../pages/Principal";
 
 function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
-  function handleLogin(e) {
+  function handleSignIn(e) {
     e.preventDefault();
     signInWithEmailAndPassword(email, password)
-      .then(() => {
-        alert("logou");
-      })
-      .catch((e) => {
-        console.log("Erro: " + e);
-        switch (e.code) {
-          case "auth/user-not-found":
-            alert(e);
-            break;
-          case "auth/wrong-password":
-            alert(e);
-            break;
-          case "auth/invalid-email":
-            alert(e);
-            break;
-          case "auth/user-disabled":
-            alert(e);
-            break;
-        }
-      });
+  }
+
+  const emailDiv = document.querySelector(".divEmail")
+
+  if(error){
+    
   }
 
   return (
     <Container customClass={`squareLogin ${props.classLogin}`}>
       <form>
         <div className="account">Sua conta</div>
-        <fieldset className="divEmail">
+        <fieldset className="divEmail" data-tooltip="Email ou senha incorreto">
           <input
             type="email"
             name="email"
             placeholder="E-mail"
+            required
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </fieldset>
@@ -56,13 +49,13 @@ function Login(props) {
             id="passwords"
             placeholder="Password"
             required
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </fieldset>
         <fieldset className="loginButton">
-          <button onClick={handleLogin}>Login</button>
-          <button >Log out</button>
-          {user?.email}
+          <button onClick={handleSignIn}>Login</button>
+          <button>Log out</button>
         </fieldset>
       </form>
       <div className="buttons">

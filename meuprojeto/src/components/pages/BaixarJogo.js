@@ -1,5 +1,8 @@
 function BaixarJogo() {
-  return <p>BaixarJogo</p>;
+  return (
+    <p>dsadasdasdas</p>
+  );
+  
 }
 
 export default BaixarJogo;

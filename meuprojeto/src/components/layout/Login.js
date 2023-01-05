@@ -8,7 +8,6 @@ import "../pages/Principal";
 
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../FirebaseConfig";
-import Principal from "../pages/Principal";
 
 function Login(props) {
   const [email, setEmail] = useState("");
@@ -19,14 +18,16 @@ function Login(props) {
 
   function handleSignIn(e) {
     e.preventDefault();
-    signInWithEmailAndPassword(email, password)
+    signInWithEmailAndPassword(email, password);
+    if (user) {
+      console.log(user);
+    }
   }
 
-  const emailDiv = document.querySelector(".divEmail")
+  // const emailDiv = document.querySelector(".divEmail");
 
-  if(error){
-    
-  }
+  // if (error) {
+  // }
 
   return (
     <Container customClass={`squareLogin ${props.classLogin}`}>

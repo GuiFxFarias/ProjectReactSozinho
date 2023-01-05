@@ -27,9 +27,7 @@ function CriarConta() {
     );
   }
 
-  if (user) {
-    console.log(user);
-  }
+  
 
   if (error) {
     return console.log("Erro" + error);

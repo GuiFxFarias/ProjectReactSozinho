@@ -15,22 +15,19 @@ function CriarConta() {
   function handleRegister(e) {
     e.preventDefault();
     createUserWithEmailAndPassword(email, password);
+    if (loading) {
+      console.log("cadastrado");
+      return (
+        <div>
+          <p>Carregando...</p>
+          <p>Registrou</p>
+        </div>
+      );
+    }
   }
-
-  if (loading) {
-    console.log("cadastrado");
-    return (
-      <div>
-        <p>Carregando...</p>
-        <p>Registrou</p>
-      </div>
-    );
-  }
-
-  
 
   if (error) {
-    return console.log("Erro" + error);
+    return console.log("Error: " + error);
   }
 
   return (

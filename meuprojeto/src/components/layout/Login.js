@@ -24,10 +24,9 @@ function Login(props) {
     }
   }
 
-  // const emailDiv = document.querySelector(".divEmail");
-
-  // if (error) {
-  // }
+  if (error) {
+    console.log("Error: " + error);
+  }
 
   return (
     <Container customClass={`squareLogin ${props.classLogin}`}>

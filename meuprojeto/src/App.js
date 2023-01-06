@@ -14,8 +14,10 @@ import Login from "./components/layout/Login";
 import Categories from "./components/layout/Categories";
 import RecuperarSenha from "./components/pages/RecuperarSenha";
 import Main from "./components/layout/Main";
+import { useState } from "react";
 
 function App() {
+  
   return (
     <Router>
       <NavbarIcons customClass={"margin"}></NavbarIcons>

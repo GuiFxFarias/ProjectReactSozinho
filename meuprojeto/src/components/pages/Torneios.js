@@ -1,23 +1,12 @@
-import { useEffect, useState } from "react";
+import "../hooks/StopWatch";
 
 function Torneios() {
-  const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [hour, setHour] = useState(0);
-
-  if (seconds >= 60) {
-    setSeconds = 0;
-
-    const intMinutes = setInterval(() => {
-      setMinutes((minutes) => minutes + 1);
-    }, 1000);
-    return () => clearInterval(intMinutes);
-  }
+  const [day, hour, minute, second] = stopWatch("Jan 8, 2023 00:00:00");
 
   return (
     <div className="torneios">
       <h2>
-        {hour}:{minutes}:{seconds}
+        {day}:{hour}:{minute}:{second}
       </h2>
     </div>
   );

@@ -15,6 +15,10 @@ h4 {
   padding: 0.2em;
 }
 
+.displayOn {
+  display: block;
+}
+
 .flexAccount {
   display: flex;
   align-items: center;
@@ -138,17 +142,31 @@ h4 {
   margin-left: 10px;
 }
 
-.itemSelect input{
+.itemSelect input {
   padding: 8px;
   border-radius: 1em;
   border: 2px solid black;
 }
 
-.itemSelect .radio{
+.itemSelect .radio {
   display: none;
 }
 
-.itemSelect label{
+.itemSelect label {
   border: 1px solid black;
   padding: 5px;
+}
+
+.displayMobile {
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  .flexAccount {
+    display: none;
+  }
+
+  .displayMobile {
+    display: block;
+  }
 }

@@ -33,14 +33,12 @@
   justify-content: center;
 }
 
-
-.squareLogin form{
-  border: 1px solid #1962b7;
+.squareLogin form {
   border-radius: 5px;
   background-color: white;
 }
 
-.background{
+.background {
   background-image: url("../img/unnamed.jpg");
   background-repeat: no-repeat;
   background-size: cover;

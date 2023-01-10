@@ -4,12 +4,13 @@ import { BsFillForwardFill } from "react-icons/bs";
 
 import { auth } from "../../FirebaseConfig";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import CreateAccount from "../layout/CreateAccount";
 
 function CriarConta() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
 
   function handleRegister(e) {
@@ -35,7 +36,7 @@ function CriarConta() {
       <h2>Crie Sua Conta</h2>
       <h4>Inicia sua aventura Pokémon por aqui, criando sua conta</h4>
       <div className="flexAccount">
-        <form>
+        <form className="displayOn">
           <div className="rowRegister">
             <fieldset className="accountNew">
               <ul className="listLabel">
@@ -152,6 +153,7 @@ function CriarConta() {
           <button onClick={handleRegister}>Registrar</button>
         </form>
       </div>
+      <CreateAccount inputClass="displayMobile" />
     </div>
   );
 }

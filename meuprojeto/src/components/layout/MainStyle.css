@@ -1,8 +1,10 @@
-.mainStyle{
-    margin-top: 10px;
-    width: 98%;
-    background-color: white;
-    height: 120vh;
-    border-radius: 5px;
-    border: 2px solid #1962b7;
+.mainStyle {
+  margin-top: 10px;
+  width: 98%;
+  background-color: white;
+  height: 120vh;
+  border-radius: 5px;
+  border: 2px solid #1962b7;
 }
+
+

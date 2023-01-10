@@ -1,0 +1,172 @@
+form {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 0.4em;
+  padding: 0.5em;
+  margin: 10px;
+}
+
+h4 {
+  background-color: aliceblue;
+  padding: 0.2em;
+}
+
+.displayOn {
+  display: block;
+}
+
+.flexAccount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 350px;
+}
+
+.accountNew .listLabel .item svg {
+  font-size: 16pt;
+}
+
+.flexAccount ul {
+  list-style: none;
+}
+
+.rowRegister {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.accountNew {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+}
+
+.inputsFlex {
+  border: none;
+}
+
+.listInput {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.listLabel {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rowPersonage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.personage {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+}
+
+.listPersonage {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.selectPersonage {
+  border: none;
+}
+.selectList {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item {
+  width: 180px;
+  background-color: #3995ff;
+  border-radius: 1em;
+  color: white;
+  padding: 8px;
+}
+
+.item label {
+  display: flex;
+  align-items: center;
+}
+
+.item label svg {
+  font-size: 16pt;
+  margin-left: 10px;
+}
+
+.itemInput input {
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.itemPersonage {
+  width: 180px;
+  background-color: #3995ff;
+  border-radius: 1em;
+  color: white;
+  padding: 8px;
+}
+
+.itemPersonage label {
+  display: flex;
+  align-items: center;
+}
+
+.itemPersonage label svg {
+  font-size: 16pt;
+  margin-left: 10px;
+}
+
+.itemSelect input {
+  padding: 8px;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.itemSelect .radio {
+  display: none;
+}
+
+.itemSelect label {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.displayMobile {
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  .flexAccount {
+    display: none;
+  }
+
+  .displayMobile {
+    display: block;
+  }
+}

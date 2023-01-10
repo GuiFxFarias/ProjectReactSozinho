@@ -1,25 +1,22 @@
-import { BsFillForwardFill } from "react-icons/bs";
-
-const labels = [{ name: "Nome de Usuário" }, { email: "Selecione seu email" }];
-
-labels.forEach((element) => {
-  return element;
-});
-
-function ListItensMobile() {}
+const labels = [
+  {
+    id: 0,
+    name: "Nome de usuário",
+  },
+  {
+    id: 1,
+    name: "Email",
+  },
+];
 
 function CreateAccount(props) {
-  return (
-    <div className={`${props.inputClass}`}>
-      <form>
-        <fieldset>
-          <ul className="mobileList">
-            <ListItensMobile />
-          </ul>
-        </fieldset>
-      </form>
-    </div>
-  );
+  const listItems = labels.map((person) => (
+    <li>
+      <b>{person.name}:</b>
+    </li>
+  ));
+
+  return <ul className={`${props.inputClass}`}>{listItems}</ul>;
 }
 
 export default CreateAccount;

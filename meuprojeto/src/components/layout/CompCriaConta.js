@@ -9,7 +9,7 @@ function CompCriaConta() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [createUserWithEmailAndPassword, loading, error] =
+  const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
 
   function handleRegister(e) {
@@ -24,6 +24,9 @@ function CompCriaConta() {
         </div>
       );
     }
+  }
+  if (user) {
+    <h1>{user.user.email}</h1>;
   }
 
   if (error) {

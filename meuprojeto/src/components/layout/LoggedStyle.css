@@ -1,0 +1,20 @@
+
+.accountLogged {
+  background-color: #1a84fd;
+  padding: 0.4em 0.7em;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid black;
+  font-size: 14pt;
+}
+
+.infoLogged{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.infoList{
+    list-style: none;
+}

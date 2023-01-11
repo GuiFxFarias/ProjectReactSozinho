@@ -15,9 +15,9 @@ import Categories from "./components/layout/Categories";
 import RecuperarSenha from "./components/pages/RecuperarSenha";
 import Main from "./components/layout/Main";
 import { useState } from "react";
+import FormLogin from "./components/layout/FormLogin";
 
 function App() {
-  
   return (
     <Router>
       <NavbarIcons customClass={"margin"}></NavbarIcons>
@@ -39,11 +39,7 @@ function App() {
             </Main>
           </Container>
           <div>
-            <Login
-              customClass="borderLogin"
-              register="Criar Conta"
-              passForgot="Recuperar Conta"
-            ></Login>
+            <Login />
             <Categories></Categories>
           </div>
         </Container>

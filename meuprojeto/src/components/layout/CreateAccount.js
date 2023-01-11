@@ -11,7 +11,7 @@ const labels = [
 
 function CreateAccount(props) {
   const listItems = labels.map((person) => (
-    <li>
+    <li key={person.id}>
       <b>{person.name}:</b>
     </li>
   ));

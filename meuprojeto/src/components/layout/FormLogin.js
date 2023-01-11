@@ -2,7 +2,7 @@ import Container from "./Container";
 import "./FormLoginStyle.css";
 import { GiPokecog } from "react-icons/gi";
 import { useState } from "react";
-import { useSignOut } from "react-firebase-hooks/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import "../pages/Principal";
 
@@ -22,15 +22,21 @@ function FormLogin(props) {
     signInWithEmailAndPassword(email, password);
   }
 
-  if (user) {
-    console.log(user.user.email);
-    return <Logged userEmail={user.user.email} key={user}/>;
+  function CurrentUser() {
+    const [user, loading, error] = useAuthState(auth);
+
+    console.log(user);
   }
 
+  if (user) {
+    console.log(user.user.email);
+    return <Logged userEmail={user.user.email} key={user} />;
+  }
   if (error) {
     console.log("Error: " + error);
   }
 
+  
 
   return (
     <Container customClass={`squareLogin ${props.classLogin}`}>

@@ -14,6 +14,7 @@ function FormLogin(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
@@ -30,19 +31,22 @@ function FormLogin(props) {
 
   if (user) {
     console.log(user.user.email);
+    console.log(user.user.displayName);
     return <Logged userEmail={user.user.email} key={user} />;
   }
   if (error) {
     console.log("Error: " + error);
   }
 
-  
-
   return (
     <Container customClass={`squareLogin ${props.classLogin}`}>
       <form>
         <div className="account">Sua conta</div>
-        <fieldset className="divEmail" data-tooltip="Email ou senha incorreto">
+        <fieldset
+          className="divEmail"
+          data-tooltip="Email ou senha incorreto"
+          
+        >
           <input
             type="email"
             name="email"

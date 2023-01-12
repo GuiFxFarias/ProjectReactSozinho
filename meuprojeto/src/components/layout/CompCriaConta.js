@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import { BsFillForwardFill } from "react-icons/bs";
 
 import { auth } from "../../FirebaseConfig";
@@ -8,6 +8,8 @@ import "./CompCriaContaStyle.css";
 function CompCriaConta() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const userRegister = auth.currentUser;
 
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
@@ -26,7 +28,11 @@ function CompCriaConta() {
     }
   }
   if (user) {
-    <h1>{user.user.email}</h1>;
+    return (
+      <>
+        <h1>{userRegister.email}</h1>
+      </>
+    );
   }
 
   if (error) {

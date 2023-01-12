@@ -19,7 +19,7 @@ function Logged({ user, userEmail }) {
           <li className="itemInfo">3</li>
         </ul>
 
-        <ButtonOut Logout={() => console.log("clicou")}>Log out</ButtonOut>
+        <ButtonOut Logout={() => signOut(auth)}>Log out</ButtonOut>
       </div>
     </div>
   );
